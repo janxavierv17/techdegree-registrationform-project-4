@@ -4,7 +4,7 @@ An Online Registration Form. <br/>
 A responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. <br/>
 
 Form Structure: <br/>
-✅ Only one <form> tag is beung used to contain all form elements. <br/>
+✅ Only one form tag is being used to contain all form elements. <br/>
 ✅ Fieldsets and legends have beed added for each of the following sections: Contact information and Newsletter<br/>
 Exceeds Expectations: N/A <br/>
 
