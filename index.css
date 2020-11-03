@@ -64,11 +64,14 @@ p {
 
 /* MAIN CONTENT */
 .main-container {
-  margin: 0 auto;
+  margin: 10px;
+  margin-bottom: 20px;
   max-width: 430px;
   padding: 1em;
   display: flex;
   flex-direction: column;
+  background-color: #bcdbf9;
+  box-shadow: 5px 5px 0 black;
 }
 
 .form-header h1 {
@@ -113,6 +116,8 @@ textarea {
   border: none;
   border-radius: 5px;
   background-color: #eff0f1;
+  width: 100%;
+  margin: 12px 0 12px 0;
 }
 
 input:focus,
@@ -185,8 +190,10 @@ button {
   font-style: italic;
 }
 
+/* MEDIA QUERY */
 @media (min-width: 768px) {
   .main-container {
+    margin: 0 auto 22px auto;
     max-width: 768px;
     padding: 16px 100px 16px 100px;
   }
@@ -220,6 +227,5 @@ button {
   }
   .col {
     flex-grow: 2;
-    margin: 10px 0 15px 0;
   }
 }
