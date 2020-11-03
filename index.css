@@ -64,8 +64,9 @@ p {
 
 /* MAIN CONTENT */
 .main-container {
-  width: 100%;
-  padding: 1rem;
+  margin: 0 auto;
+  max-width: 430px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -182,4 +183,43 @@ button {
 .copyright {
   text-align: center;
   font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+    padding: 16px 100px 16px 100px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="street"],
+  input[type="city"],
+  input[type="state"],
+  input[type="number"],
+  select[id="state"] {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-primary {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    max-width: 125px;
+    flex-basis: 1em;
+  }
+  .col {
+    flex-grow: 2;
+    margin: 10px 0 15px 0;
+  }
 }
