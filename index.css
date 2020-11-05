@@ -64,7 +64,7 @@ p {
 
 /* MAIN CONTENT */
 .main-container {
-  margin: 10px;
+  margin: 0 auto;
   margin-bottom: 20px;
   max-width: 430px;
   padding: 1em;
@@ -74,7 +74,7 @@ p {
   box-shadow: 5px 5px 0 black;
 }
 
-.form-header h1 {
+.form-header legend {
   font-size: 1.3em;
   margin-bottom: 12px;
 }
@@ -82,6 +82,10 @@ p {
 form {
   display: flex;
   flex-direction: column;
+}
+
+fieldset {
+  border: none;
 }
 
 label[for="name"],
@@ -137,7 +141,7 @@ footer {
   flex-direction: column;
 }
 
-footer h1 {
+legend {
   font-size: 1.3em;
   margin: 10px 0 12px 0;
 }
@@ -194,7 +198,7 @@ button {
 @media (min-width: 768px) {
   .main-container {
     margin: 0 auto 22px auto;
-    max-width: 768px;
+    max-width: 658px;
     padding: 16px 100px 16px 100px;
   }
 
@@ -209,11 +213,13 @@ button {
   input[type="street"],
   input[type="city"],
   input[type="state"],
-  input[type="number"],
   select[id="state"] {
     width: 100%;
   }
 
+  input[type="number"] {
+    width: 50%;
+  }
   .row {
     display: flex;
   }

@@ -32,10 +32,9 @@
     <hr class="head-divider"/>
     <hr class="divider"/>
     <main>
-        <div class="form-header">
-            <h1>Contact Information</h1>
-        </div>
         <form>
+            <fieldset> 
+                <legend>Contact Information</legend>
             <div class="row">
                 <div class="col-primary">
                     <label for="name">Full Name</label>
@@ -117,49 +116,49 @@
                     <label for="zip">Zip Code</label>
                 </div>
                 <div class="col" > 
-                    <input id="zip" name="user_zip" type="tel" placeholder="Four digit zip code" pattern="[0-9]{4}"/>
+                    <input id="zip" name="user_zip" type="number" placeholder="Four digit zip code"/>
                 </div>
             </div>
+            </fieldset>
 
             <hr class="divider"/>
-                <footer>
-                    <h1>Newsletter</h1>
+            <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to reiceive</p>
                     <div class="footer-content">
-                        <p>Select the newsletters you would like to reiceive</p>
                         <label for="html"> 
                             <input type="checkbox" id="html" name="html">
                             HTML News
                         </label>
-  
-                        
+
                         <label for="css">
                             <input type="checkbox" id="css" name="css">
                             CSS News
                         </label>
-                       
                         <label for="javascript">
                             <input type="checkbox" id="javascript" name="javascript">
                             Javascript News
                         </label>
-                        
                         <p>Newsletter format</p>
                         <label for="html-format">
-                            <input type="radio" id="html-format"  name="html-format">
+                            <input type="radio" id="html-format" name="newsletter-format" value="html-format">
                             HTML
                         </label>
                         <label for="plain-format">
-                            <input type="radio" id="plain-format" name="plain-format">
+                            <input type="radio" id="plain-format" name="newsletter-format" value="plain-format">
                             Plain text
                         </label>
-
                         <label for="message">Other topics you'd like to hear about.</label>
                         <textarea id="message" name="message"></textarea>
                         <button>Sign up</button>
-                        <p class="copyright">Copyright The Code Review</p>
                     </div>
-                </footer>
+            </fieldset>
         </form>
     </main>
+    <footer>
+        <p class="copyright">Copyright The Code Review</p>
+    </footer>
+
 </div>
 
 
