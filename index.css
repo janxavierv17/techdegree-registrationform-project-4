@@ -98,6 +98,7 @@ label[for="zip"] {
   color: #55687a;
   font-size: 14px;
   margin: 16px 0 16px 0;
+  width: 125px;
 }
 
 ::placeholder {
@@ -130,7 +131,7 @@ textarea:focus {
   transition: all 0.3s ease-in-out;
 }
 
-input[type="number"] {
+input[id="zip"] {
   width: 50%;
   margin-bottom: 22px;
 }
@@ -198,7 +199,7 @@ button {
 @media (min-width: 768px) {
   .main-container {
     margin: 0 auto 22px auto;
-    max-width: 658px;
+    max-width: 760px;
     padding: 16px 100px 16px 100px;
   }
 
@@ -217,7 +218,7 @@ button {
     width: 100%;
   }
 
-  input[type="number"] {
+  input[id="zip"] {
     width: 50%;
   }
   .row {
